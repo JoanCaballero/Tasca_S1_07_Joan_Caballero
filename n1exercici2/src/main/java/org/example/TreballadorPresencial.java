@@ -11,4 +11,9 @@ public class TreballadorPresencial extends Treballador{
     public double calcularSou(double hores){
         return hores * Treballador.getPreuHora() + benzina;
     }
+
+    @Deprecated
+    public String cognomNomCognom(){
+        return (this.getCognom() + ", " + this.getNom() + ", " + this.getCognom());
+    }
 }

@@ -12,4 +12,9 @@ public class TreballadorOnline extends Treballador{
     public double calcularSou(double hores){
         return hores * Treballador.getPreuHora() + INTERNET;
     }
+
+    @Deprecated
+    public String cognomNom(){
+        return (this.getCognom() + ", " + this.getNom());
+    }
 }
